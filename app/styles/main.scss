@@ -1,6 +1,15 @@
-@import 'fonts';
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+// Modules
+@import 'modules/variables';
+@import 'modules/buttons';
+@import 'modules/colors';
+@import 'modules/fonts';
+@import 'modules/inputs';
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: cornflowerblue;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $black;
 }
