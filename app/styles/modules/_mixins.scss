@@ -1,0 +1,4 @@
+@mixin linear-gradient($direction, $color-start, $color-stop) {
+    background: -webkit-linear-gradient(legacy-direction($direction), $color-start, $color-stop);
+    background: linear-gradient($direction, $color-start, $color-stop);
+}

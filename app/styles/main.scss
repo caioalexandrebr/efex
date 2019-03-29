@@ -8,8 +8,12 @@ $screen-lg-min: 1200px;
 @import 'modules/colors';
 @import 'modules/fonts';
 @import 'modules/inputs';
+@import 'modules/mixins';
+
+// Components
+@import 'components/services';
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: $black;
+    background-color: $white;
 }

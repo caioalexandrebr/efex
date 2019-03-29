@@ -1,0 +1,14 @@
+section#services {
+    background: $white;
+}
+
+.section-title {
+    .gradient-border {
+        width: 200px;
+        height: 3px;
+        @include linear-gradient(to right, $alpha, $bravo);
+    }
+    .title {
+        color: $bravo;
+    }
+}
