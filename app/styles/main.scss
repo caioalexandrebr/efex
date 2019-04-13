@@ -10,6 +10,9 @@ $screen-lg-min: 1200px;
 @import 'modules/inputs';
 @import 'modules/mixins';
 
+// Site
+@import 'site/footer';
+
 // Components
 @import 'components/services';
 

@@ -1,0 +1,20 @@
+#footer.footer {
+    height: 165px;
+    border: solid 1px $delta;
+    background-color: $charlie;
+
+    .logo {
+        img {
+            width: 60px;
+        }
+    }
+
+    .copyright {
+        text-align: center;
+
+        span {
+            color: $white;
+            font-size: 22px;
+        }
+    }
+}
