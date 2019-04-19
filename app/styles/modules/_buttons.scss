@@ -5,6 +5,50 @@
  */
 
 /* MOBILE STYLES ------------------------------------------------------------ */
+@keyframes opacidade {
+    0% {
+        opacity: 0.2;    
+    }
+    50% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0.2; 
+    }
+}
+
+.arrow {
+    width: 50px;
+    height: 15px;
+    display: block;
+    position: relative;
+    animation: opacidade 3s infinite;
+    animation-delay: 1s;
+    background: url(/app/images/arrow.svg) no-repeat center;
+
+    &:before {
+        left: 0;
+        content: '';
+        width: 10px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        animation: opacidade 3s infinite;
+        background: url(/app/images/arrow.svg) no-repeat;
+    }
+
+    &:after {
+        right: 0;
+        content: '';
+        width: 10px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        animation: opacidade 3s infinite;
+        animation-delay: 2s;
+        background: url(/app/images/arrow.svg) no-repeat;
+    }
+}
 
 /* MEDIA QUERY ------------------------------------------------------------ */
 
