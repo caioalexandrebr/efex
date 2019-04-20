@@ -41,9 +41,50 @@
 		}
 	}
 
+	.circle-text{
+		position: absolute;
+		z-index: 3;
+		right: 150px;
+		top: 100px;
+
+		.char{
+			font: 26px Monaco, MonoSpace;
+			height: 70px;
+			position: absolute;
+			width: 20px;
+			left: 0;
+			top: 0;
+			transform-origin: bottom center;	
+		}
+
+		.char1 { transform: rotate(16deg); }
+		.char2 { transform: rotate(32deg); }
+		.char3 { transform: rotate(48deg); }
+		.char4 { transform: rotate(64deg); }
+		.char5 { transform: rotate(80deg); }
+		.char6 { transform: rotate(96deg); }
+		.char7 { transform: rotate(112deg); }
+		.char8 { transform: rotate(128deg); }
+		.char9 { transform: rotate(144deg); }
+		.char10 { transform: rotate(160deg); }
+		.char11 { transform: rotate(176deg); }
+		.char12 { transform: rotate(192deg); }
+		.char13 { transform: rotate(208deg); }
+		.char14 { transform: rotate(224deg); }
+		.char15 { transform: rotate(240deg); }
+		.char16 { transform: rotate(256deg); }
+		.char17 { transform: rotate(272deg); }
+		.char18 { transform: rotate(288deg); }
+		.char19 { transform: rotate(304deg); }
+		.char20 { transform: rotate(320deg); }
+		.char21 { transform: rotate(336deg); }
+		.char22 { transform: rotate(352deg); }
+		.char23 { transform: rotate(368deg); }
+	}
+
 	.box-content-efex{
 		box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.16);
-		padding: 10px 90px 40px;
+		padding: 10px 50px 40px;
 		margin-top: -100px;
 		position: relative;
 		z-index: 2;
@@ -57,7 +98,7 @@
 
 		.text{
 			color: #707070;
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 }
