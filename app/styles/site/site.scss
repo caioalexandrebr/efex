@@ -4,12 +4,18 @@
 
 .section-title {
     width: 100%;
-    
-    .white-border {
+
+    .white-border, .black-border {
         height: 3px;
         width: 200px;
+    }
+    .white-border {
         background-color: $white;
     }
+    .black-border {
+        background-color: $black;
+    }
+
     .title {
         color: $white;
         display: block;
