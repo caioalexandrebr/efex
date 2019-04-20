@@ -278,11 +278,12 @@ svg {
         font-weight: normal;
         text-decoration: none;
         font-family: 'Poppins Light';
-        
+
         &:hover, &:link {
             text-decoration: none;
         }
     }
+    
     &-description {
         color: $foxtrot;
         font-size: 40px;

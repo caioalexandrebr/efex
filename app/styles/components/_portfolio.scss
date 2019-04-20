@@ -1,0 +1,62 @@
+/*
+ *
+ * Modules > Portfolio
+ *
+ */
+
+/* MOBILE STYLES ------------------------------------------------------------ */
+
+.portfolio {
+    overflow-x: hidden;
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background: linear-gradient(to right, $white 0%, $white 60%, $charlie 60%, $charlie 100%);
+
+    .title {
+        color: $foxtrot;
+    }
+
+    &-title {
+        color: $delta;
+        font-size: 45px;
+        margin-top: 80px;
+        font-weight: normal;
+        font-family: 'Poppins Bold';
+    }
+    &-description {
+        color: $delta;
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 40px;
+        font-family: 'Poppins Regular';
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &-preview {
+        width: 100%;
+        height: 600px;
+        border: 1px solid red;
+        background: url(/app/images/notebook.svg) no-repeat;
+        background-size: contain;
+    }
+}
+
+/* MEDIA QUERY ------------------------------------------------------------ */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

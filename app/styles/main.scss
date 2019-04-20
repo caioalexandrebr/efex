@@ -16,11 +16,12 @@ $screen-lg-min: 1200px;
 @import 'site/site';
 
 // Components
-@import 'components/contact';
-@import 'components/services';
 @import 'components/about';
+@import 'components/contact';
+@import 'components/portfolio';
+@import 'components/services';
 
 body {
-    font-family: 'Open Sans', sans-serif;
     background-color: $white;
+    font-family: 'Open Sans', sans-serif;
 }
