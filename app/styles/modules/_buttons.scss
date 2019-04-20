@@ -27,44 +27,48 @@
     0% {
         opacity: 0.2;    
     }
+    25% {
+        opacity: 0.3;
+    }
     50% {
         opacity: 1; 
+    }
+    75% {
+        opacity: 0.3;
     }
     100% {
         opacity: 0.2; 
     }
 }
 
-.arrow {
+.arrow  {
     width: 50px;
-    height: 15px;
-    display: block;
+    height: 20px;
     position: relative;
-    animation: opacidade 3s infinite;
-    animation-delay: 1s;
-    background: url(/app/images/arrow.svg) no-repeat center;
+    display: inline-block;
 
-    &:before {
-        left: 0;
-        content: '';
+    span {
         width: 10px;
         height: 15px;
-        display: block;
-        position: absolute;
-        animation: opacidade 3s infinite;
+        margin-right: 10px;
+        display: inline-block;
         background: url(/app/images/arrow.svg) no-repeat;
-    }
 
-    &:after {
-        right: 0;
-        content: '';
-        width: 10px;
-        height: 15px;
-        display: block;
-        position: absolute;
-        animation: opacidade 3s infinite;
-        animation-delay: 2s;
-        background: url(/app/images/arrow.svg) no-repeat;
+        &:first-child {
+            animation: opacidade 2s infinite;
+            animation-delay: 0.666s;
+        }
+
+        &:nth-child(2) {
+            animation: opacidade 2s infinite;
+            animation-delay: 1.332s;
+        }
+
+        &:last-child {
+            margin-right: 0;
+            animation: opacidade 2s infinite;
+            animation-delay: 2s;
+        }
     }
 }
 
