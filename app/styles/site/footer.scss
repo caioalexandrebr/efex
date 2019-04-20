@@ -11,15 +11,20 @@
     padding-bottom: 60px;
     border: solid 1px $delta;
     background-color: $charlie;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .logo {
         img {
             width: 60px;
         }
+
+        margin-right: 20px;
     }
 
     .copyright {
-        text-align: center;
+        // text-align: center;
 
         span {
             color: $white;
