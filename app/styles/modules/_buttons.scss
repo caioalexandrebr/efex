@@ -5,6 +5,19 @@
  */
 
 /* MOBILE STYLES ------------------------------------------------------------ */
+
+.btn-default {
+    border: 0;
+    width: 100%;
+    color: $white;
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: normal;
+    background-color: $charlie;
+    font-family: 'Poppins Regular';
+}
+
 @keyframes opacidade {
     0% {
         opacity: 0.2;    

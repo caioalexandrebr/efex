@@ -1,9 +1,9 @@
 section(id='contact', class='grid contact')
-  section(class='section-title-white')
+  section(class='section-title')
     header(class='container-fluid')
       div(class='row')
-        div(class='col-md-10 col-md-offset-1')
-          div(class='gradient-border')
+        div(class='col-md-10')
+          div(class='white-border')
           span(class='title') contato
   div(class='container-fluid')
     div(class='row')
@@ -13,32 +13,27 @@ section(id='contact', class='grid contact')
         ul(class='contact-list')
           li(class='contact-list-item') (81) 0000 0000
           li(class='contact-list-item') efex@email.com.br
-      div(class='col-md-4')
+      div(class='col-md-8')
         div(class='contact-box')
-          form
-            div
-              input(type='text' required='')
-              label(alt='nome' placeholder='nome')
-            div
-              input(type='text' required='')
-              label(alt='email' placeholder='email')
-            div
-              input(type='text' required='')
-              label(alt='telefone' placeholder='telefone')
-            div
-              input(type='text' required='')
-              label(alt='serviço interessado' placeholder='serviço interessado')
-      div(class='col-md-4')
-        form
-          div
-            input(type='text' required='')
-            label(alt='nome' placeholder='nome')
-          div
-            input(type='text' required='')
-            label(alt='email' placeholder='email')
-          div
-            input(type='text' required='')
-            label(alt='telefone' placeholder='telefone')
-          div
-            input(type='text' required='')
-            label(alt='serviço interessado' placeholder='serviço interessado')
+          div(class='row')
+            div(class='col-md-6')
+              div(class='contact-box-form')
+                p(class='contact-box-form-title') Preencha com os seus dados e entraremos<br>em contato o mais breve possível.
+                form
+                  div
+                    input(type='text' required='')
+                    label(alt='nome' placeholder='nome')
+                  div
+                    input(type='text' required='')
+                    label(alt='email' placeholder='email')
+                  div
+                    input(type='text' required='')
+                    label(alt='telefone' placeholder='telefone')
+                  div
+                    input(type='text' required='')
+                    label(alt='serviço interessado' placeholder='serviço interessado')
+                  div
+                    button(class='btn-default') enviar
+            div(class='row')
+              div(class='col-md-6')
+                div(class='contact-box-bg')
