@@ -1,0 +1,63 @@
+.about{
+	margin-bottom: 100px;
+
+	.head-about{
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.title{
+		color: #0c0c0c;
+	}
+
+	.phrase{
+		border: 2px solid #fff;
+		border-left: 0px;
+		border-top-right-radius: 50px;
+		border-bottom-right-radius: 50px;
+		margin-top: 150px;
+
+		.title{
+			color: #fff;
+			font-weight: bold;
+			margin: 29px 100px 15px 100px;
+		}
+	}
+
+	.bg-gradient-about{
+        @include linear-gradient(to right, $alpha, $bravo);
+		width: 60%;
+		position: absolute;
+		height: 400px;
+	}
+
+	.flag-efex{
+		position: relative;
+		z-index: 1;
+
+		.flg{
+			width: 500px;
+			margin-top: -300px;
+		}
+	}
+
+	.box-content-efex{
+		box-shadow: 0 10px 32px 0 rgba(0, 0, 0, 0.16);
+		padding: 10px 90px 40px;
+		margin-top: -100px;
+		position: relative;
+		z-index: 2;
+		background: #fff;
+
+		.title{
+			font-size: 45px;
+			color: #707070;
+			margin-bottom: 30px;
+		}
+
+		.text{
+			color: #707070;
+			font-size: 18px;
+		}
+	}
+}
