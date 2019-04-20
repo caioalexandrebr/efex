@@ -1,0 +1,108 @@
+/*
+ *
+ * Modules > Contact
+ *
+ */
+
+/* MOBILE STYLES ------------------------------------------------------------ */
+
+.contact {
+    overflow-x: hidden;
+    padding-top: 140px;
+    padding-bottom: 100px;
+    background-color: $bravo;
+
+    &-title {
+        color: $white;
+        font-size: 55px;
+        margin-top: 80px;
+        font-weight: normal;
+        font-family: 'Poppins Bold';
+    }
+    &-description {
+        color: $white;
+        font-size: 30px;
+        font-weight: normal;
+        font-family: 'Poppins Regular';
+    }
+    &-list {
+        padding: 0;
+        margin: 40px 0 0 0;
+
+        &-item {
+            color: $white;
+            font-size: 23px;
+            list-style: none;
+            padding-left: 48px;
+            position: relative;
+            font-weight: normal;
+            font-family: 'Poppins Regular';
+
+            &:first-child {
+                margin-bottom: 20px;
+            }
+
+            &:after {
+                left: 0;
+                top: 50%;
+                content: '';
+                width: 34px;
+                height: 16px;
+                position: absolute;
+                background-color: $alpha;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &-box {
+        margin-top: -60px;
+        position: relative;
+        background-color: $white;
+
+        &:after {
+            top: 0;
+            left: 100%;
+            content: '';
+            width: 1000%;
+            height: 100%;
+            position: absolute;
+            background-color: $white;
+        }
+
+        &-form {
+            padding: 30px;
+            
+            &-title {
+                color: $echo;
+                font-size: 20px;
+                font-weight: normal;
+                font-family: 'Poppins Regular';
+            }
+        }
+
+        &-bg {
+            width: 190px;
+            height: 400px;
+            margin-bottom: 30px;
+            background: url(/app/images/contact.svg) bottom left;
+        }
+    }
+}
+
+/* MEDIA QUERY ------------------------------------------------------------ */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

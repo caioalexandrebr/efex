@@ -1,0 +1,25 @@
+.grid {
+    padding: 0 100px;
+}
+
+.section-title {
+    .white-border {
+        height: 3px;
+        width: 200px;
+        background-color: $white;
+    }
+    .title {
+        color: $white;
+        display: block;
+        font-size: 30px;
+        font-weight: normal;
+        margin: 18px 0 18px 110px;
+        font-family: 'Poppins Light';
+    }
+    
+    .gradient-border {
+        height: 3px;
+        width: 200px;
+        @include linear-gradient(to right, $alpha, $bravo);
+    }
+}

@@ -12,8 +12,11 @@ $screen-lg-min: 1200px;
 
 // Site
 @import 'site/footer';
+@import 'site/header';
+@import 'site/site';
 
 // Components
+@import 'components/contact';
 @import 'components/services';
 
 body {
