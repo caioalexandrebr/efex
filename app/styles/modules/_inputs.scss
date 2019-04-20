@@ -12,7 +12,7 @@ input[type="text"] {
     height: calc(3em + 2px);
     margin: 0 0 1em;
     padding: 1em;
-    border: 1px solid $kilo;
+    border: 1px solid $golf;
     border-radius: 5px;
     background: $white;
     resize: none;
@@ -51,7 +51,7 @@ input[type="text"][required] + label[placeholder]:before {
     display: inline-block;
     margin: 0 calc(1em + 2px);
     padding: 0 2px;
-    color: $kilo;
+    color: $golf;
     white-space: nowrap;
     transition: 0.3s ease-in-out;
     background-image: linear-gradient(to bottom, #fff, #fff);

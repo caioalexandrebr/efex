@@ -249,14 +249,46 @@ svg {
 
 
 
-#header.header {
-    height: 100vh;
+.header {
+    height: auto;
+    background: linear-gradient(to right, $white 0%, $white 50%, $charlie 50%, $charlie 100%);
 
-    .logo {
-        width: 165px;
+    &-nav {
         height: 90px;
-        display: inline-block;
-        background: url(/app/images/efex-icon.svg) $bravo no-repeat center center;
+        background-color: $white;
+
+        &-logo {
+            width: 165px;
+            height: 90px;
+            display: inline-block;
+            background: url(/app/images/efex-icon.svg) $bravo no-repeat center center;
+        }
+    }
+
+    .grid {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    &-title {
+        display: block;
+        margin: 18px 0;
+        font-size: 30px;
+        color: $foxtrot;
+        font-weight: normal;
+        text-decoration: none;
+        font-family: 'Poppins Light';
+        
+        &:hover, &:link {
+            text-decoration: none;
+        }
+    }
+    &-description {
+        color: $foxtrot;
+        font-size: 58px;
+        margin-top: 40px;
+        font-weight: normal;
+        font-family: 'Poppins Bold';
     }
 }
 
