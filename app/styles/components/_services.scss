@@ -22,17 +22,4 @@
     &-description {
         font-size: 18px;
     }
-    &-link {
-        text-decoration: none;
-
-        &:hover, &:link {
-            text-decoration: none;
-        }
-        &-span {
-            color: $bravo;
-            font-size: 18px;
-            margin-right: 20px;
-            font-family: 'Poppins Bold';
-        }
-    }
 }   

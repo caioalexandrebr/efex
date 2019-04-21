@@ -51,19 +51,10 @@
     }
 
     &-box {
-        margin-top: -60px;
         position: relative;
         background-color: $white;
-
-        &:after {
-            top: 0;
-            left: 100%;
-            content: '';
-            width: 1000%;
-            height: 100%;
-            position: absolute;
-            background-color: $white;
-        }
+        border: solid 1px $delta;
+        border-right: 0;
 
         &-form {
             padding: 30px;

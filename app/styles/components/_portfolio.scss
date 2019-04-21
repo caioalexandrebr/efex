@@ -9,7 +9,6 @@
 .portfolio {
     overflow-x: hidden;
     padding-top: 140px;
-    padding-bottom: 100px;
     background: linear-gradient(to right, $white 0%, $white 60%, $charlie 60%, $charlie 100%);
 
     .title {
@@ -19,7 +18,6 @@
     &-title {
         color: $delta;
         font-size: 45px;
-        margin-top: 80px;
         font-family: 'Poppins Bold';
     }
     &-description {
@@ -33,11 +31,20 @@
     }
 
     &-preview {
-        width: 100%;
-        height: 600px;
-        border: 1px solid red;
+        width: 708px;
+        height: 550px;
+        position: relative;
         background: url(/app/images/notebook.svg) no-repeat;
         background-size: contain;
+
+        &-image {
+            top: 28px;
+            left: 125px;
+            width: 440px;
+            height: 275px;
+            position: absolute;
+            @include linear-gradient(to right, $alpha, $bravo);
+        }
     }
 }
 

@@ -1,4 +1,4 @@
-section#contact.grid.contact
+section#contact.grid-left.contact
   section.section-title
     header.container-fluid
       .row
@@ -14,26 +14,25 @@ section#contact.grid.contact
           li.contact-list-item (81) 0000 0000
           li.contact-list-item efex@email.com.br
       .col-md-8
-        .contact-box
+        .row.contact-box
+          .col-md-6
+            .contact-box-form
+              p.contact-box-form-title Preencha com os seus dados e entraremos<br>em contato o mais breve possível.
+              form
+                div
+                  input(type='text' required='')
+                  label(alt='nome' placeholder='nome')
+                div
+                  input(type='text' required='')
+                  label(alt='email' placeholder='email')
+                div
+                  input(type='text' required='')
+                  label(alt='telefone' placeholder='telefone')
+                div
+                  input(type='text' required='')
+                  label(alt='serviço interessado' placeholder='serviço interessado')
+                div
+                  button.btn-default enviar
           .row
             .col-md-6
-              .contact-box-form
-                p.contact-box-form-title Preencha com os seus dados e entraremos<br>em contato o mais breve possível.
-                form
-                  div
-                    input(type='text' required='')
-                    label(alt='nome' placeholder='nome')
-                  div
-                    input(type='text' required='')
-                    label(alt='email' placeholder='email')
-                  div
-                    input(type='text' required='')
-                    label(alt='telefone' placeholder='telefone')
-                  div
-                    input(type='text' required='')
-                    label(alt='serviço interessado' placeholder='serviço interessado')
-                  div
-                    button.btn-default enviar
-            .row
-              .col-md-6
-                .contact-box-bg
+              .contact-box-bg

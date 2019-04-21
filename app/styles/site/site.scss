@@ -1,8 +1,15 @@
 .grid {
     padding: 0 100px;
+
+    &-left {
+        padding-left: 100px;
+    }
+    &-right {
+        padding-right: 100px;
+    }
 }
 
-.none{
+.none {
     display: none;
 }
 
@@ -37,5 +44,19 @@
         height: 3px;
         width: 200px;
         @include linear-gradient(to right, $alpha, $bravo);
+    }
+}
+
+.readmore {
+    text-decoration: none;
+
+    &:hover, &:link {
+        text-decoration: none;
+    }
+    &-text {
+        color: $bravo;
+        font-size: 18px;
+        margin-right: 20px;
+        font-family: 'Poppins Bold';
     }
 }
