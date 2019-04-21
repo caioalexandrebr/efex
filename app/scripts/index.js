@@ -38,3 +38,11 @@ var callSpinLeft = function () {
 setTimeout(function () {
   callSpinRight()
 }, 5000)
+
+document.querySelector('.num2').addEventListener('click', () => {
+  callSpinRight()
+})
+
+document.querySelector('.num1').addEventListener('click', () => {
+  callSpinLeft()
+})
