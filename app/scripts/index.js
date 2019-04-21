@@ -18,3 +18,23 @@ function toggleMenu (e) {
 }
 
 menu.addEventListener('click', toggleMenu, false)
+
+var callSpinRight = function () {
+  document.querySelector('#carrossel').classList = 'carousel spin-right'
+  document.querySelector('.fill').classList = 'fill move-bar-right'
+  setTimeout(function () {
+    callSpinLeft()
+  }, 5000)
+}
+
+var callSpinLeft = function () {
+  document.querySelector('#carrossel').classList = 'carousel spin-left'
+  document.querySelector('.fill').classList = 'fill move-bar-left'
+  setTimeout(function () {
+    callSpinRight()
+  }, 5000)
+}
+
+setTimeout(function () {
+  callSpinRight()
+}, 5000)

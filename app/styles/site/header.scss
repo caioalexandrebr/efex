@@ -14,283 +14,360 @@ $yellow  : #ffc901;
 $font    : 'Titan One', san-serif;
 
 @mixin base-font($size) {
-    font-size: $size;
-    font-family: $font;
+	font-size: $size;
+	font-family: $font;
 }
 
 .menu-container {
-    width: 165px;
-    height: 90px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    @include linear-gradient(to right, $alpha, $bravo);
+	width: 165px;
+	height: 90px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	@include linear-gradient(to right, $alpha, $bravo);
 
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    transition: all 0.3s;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	transition: all 0.3s;
   
-    &.full-menu {
-        border-radius: 0;
-        padding: 0 !important;
-        position: aboslute;
-        width: 100%;
-        height: 100%;
-        right: 0;
-        top: 0;
-        transition: all 0.3s;
-    }
+	&.full-menu {
+		border-radius: 0;
+		padding: 0 !important;
+		position: aboslute;
+		width: 100%;
+		height: 100%;
+		right: 0;
+		top: 0;
+		transition: all 0.3s;
+	}
 }
 
 .full-menu .menu {
-    top: 40px;
-    right: 40px;
+	top: 40px;
+	right: 40px;
 }
 
 .menu {
-    top: 20px;
-    width: 85px;
-    right: 40px;
-    height: 50px;
-    z-index: 100;
-    display: block;
-    position: absolute;
-    border-radius: 30px;
-    transition: all 0.3s;
-    border: 2px solid white;
+	top: 20px;
+	width: 85px;
+	right: 40px;
+	height: 50px;
+	z-index: 100;
+	display: block;
+	position: absolute;
+	border-radius: 30px;
+	transition: all 0.3s;
+	border: 2px solid white;
   
-    i {
-        opacity: 0.7; 
-        transform: scale(1);
-        transition: all 0.3s;
+	i {
+		opacity: 0.7; 
+		transform: scale(1);
+		transition: all 0.3s;
 
-        &:hover {
-            opacity: 1;
-            transform: scale(1.2);
-            transition: all 0.3s;
-        }
-    }
+		&:hover {
+			opacity: 1;
+			transform: scale(1.2);
+			transition: all 0.3s;
+		}
+	}
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 0%;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden;
   
-    &.open {
-        opacity: .9;
-        visibility: visible;
-        height: 100%;
+	&.open {
+		opacity: .9;
+		visibility: visible;
+		height: 100%;
 
-        li {
-            animation: fadeInRight .5s ease forwards;
-            animation-delay: .35s;
+		li {
+			animation: fadeInRight .5s ease forwards;
+			animation-delay: .35s;
 
-            &:nth-of-type(2) {
-                animation-delay: .4s;
-            }
+			&:nth-of-type(2) {
+				animation-delay: .4s;
+			}
 
-            &:nth-of-type(3) {
-                animation-delay: .45s;
-            }
+			&:nth-of-type(3) {
+				animation-delay: .45s;
+			}
 
-            &:nth-of-type(4) {
-                animation-delay: .50s;
-            }
-        }
-    }
+			&:nth-of-type(4) {
+				animation-delay: .50s;
+			}
+		}
+	}
   
-    nav {
-        @include base-font(3.2em);
-        position: relative;
-        height: 70%;
-        top: 50%;
-        transform: translateY(-50%);
-        font-weight: 400;
-        text-align: center;
-    }
+	nav {
+		@include base-font(3.2em);
+		position: relative;
+		height: 70%;
+		top: 50%;
+		transform: translateY(-50%);
+		font-weight: 400;
+		text-align: center;
+	}
   
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 auto;
-        display: inline-block;
-        position: relative;
-        height: 100%; 
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 auto;
+		display: inline-block;
+		position: relative;
+		height: 100%; 
 
-        li {
-            display: block;
-            height: 25%;
-            height: calc(100% / 4);
-            min-height: 50px;
-            position: relative;
-            opacity: 0;
+		li {
+			display: block;
+			height: 25%;
+			height: calc(100% / 4);
+			min-height: 50px;
+			position: relative;
+			opacity: 0;
 
-            a {
-                display: block;
-                position: relative;
-                color: #fff;
-                text-decoration: none;
-                overflow: hidden;
-                opacity: 0.7;
-                transform: scale(1);
-                transition: all 0.3s;
+			a {
+				display: block;
+				position: relative;
+				color: #fff;
+				text-decoration: none;
+				overflow: hidden;
+				opacity: 0.7;
+				transform: scale(1);
+				transition: all 0.3s;
 
-                &:hover,
-                &:focus,
-                &:active {
-                    opacity: 1;
-                    transform: scale(1.2);
-                    transition: all 0.3s;
-                }
-            }
-        }
-    }
+				&:hover,
+				&:focus,
+				&:active {
+					opacity: 1;
+					transform: scale(1.2);
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
 }
 
 @keyframes fadeInRight {
   
-    0% {
-        opacity: 0;
-        left: 20%;
-    }
+	0% {
+		opacity: 0;
+		left: 20%;
+	}
 
-    100% {
-        opacity: 1;
-        left: 0;
-    }
+	100% {
+		opacity: 1;
+		left: 0;
+	}
 }
 
 h1 {
-    @include base-font(5em);
-    background-color: rgba($pink, 0.4);
-    border-radius: 100%;
-    box-shadow: 0 0 2em 1em rgba($pink, 0.4);
-    color: white;
-    margin: 30vh auto;
-    position: relative;
-    text-align: center;
-    text-shadow: 0 8px 0 rgba($purple, 0.4);
-    transform: rotate(-12deg);
-    width: 800px;
-    height: auto;
-    z-index: -1;
+	@include base-font(5em);
+	background-color: rgba($pink, 0.4);
+	border-radius: 100%;
+	box-shadow: 0 0 2em 1em rgba($pink, 0.4);
+	color: white;
+	margin: 30vh auto;
+	position: relative;
+	text-align: center;
+	text-shadow: 0 8px 0 rgba($purple, 0.4);
+	transform: rotate(-12deg);
+	width: 800px;
+	height: auto;
+	z-index: -1;
 
-    span {
-        color: $yellow;
-    }
+	span {
+		color: $yellow;
+	}
 }
 
 .blob {
-    animation: blobby 4s infinite;
+	animation: blobby 4s infinite;
 }
 
 .blob2 {
-    animation: blobby2 6s infinite;
+	animation: blobby2 6s infinite;
 }
 
 @keyframes blobby {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.08); }
-    100% { transform: scale(1); }
+	0% { transform: scale(1); }
+	50% { transform: scale(1.08); }
+	100% { transform: scale(1); }
 }
 
 @keyframes blobby2 {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.18); }
-    100% { transform: scale(1); }
+	0% { transform: scale(1); }
+	50% { transform: scale(1.18); }
+	100% { transform: scale(1); }
 }
 
 svg {
-    position: absolute;
-    top: 0;
+	position: absolute;
+	top: 0;
 }
 
 #svg-right {
-    display: block;
-    fill: $purple;
-    opacity: 0.5;  
-    right: 0;
-    width: 60%;
-    z-index: -10;
+	display: block;
+	fill: $purple;
+	opacity: 0.5;  
+	right: 0;
+	width: 60%;
+	z-index: -10;
 }
 
 #svg-left {
-    fill: $pink;
-    margin: 0;
-    width: 60%;
-    z-index: -10;
+	fill: $pink;
+	margin: 0;
+	width: 60%;
+	z-index: -10;
 }
 
 @media all and (max-width: 980px) {
-    h1 {
-            @include base-font(3em);
-    }
+	h1 {
+			@include base-font(3em);
+	}
 }
 
 @media all and (max-width: 480px) {
-    h1 {
-            @include base-font(2em);
-    }
+	h1 {
+			@include base-font(2em);
+	}
+}
+
+// BANNERS / CAROUSEL
+@keyframes SpinRight{
+  from{ transform: rotateY(0deg); }
+  to{ transform: rotateY(-90deg); }
+}
+
+@keyframes SpinLeft{
+  from{ transform: rotateY(-90deg); }
+  to{ transform: rotateY(0deg); }
+}
+
+@keyframes moveBarRight{
+	from{ left: 0 }
+	to{ left: 50px }
+}
+
+@keyframes moveBarLeft{
+	from{ left: 50px }
+	to{ left: 0px }
+}
+
+#carrossel{
+	width: 100%;
+	line-height: 160px;
+	text-align: center;
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	z-index: 5;
+	transform-style: preserve-3d;
+}
+
+.counter{
+	position: relative;
+	z-index: 5;
+	bottom: -30px;
+	display: flex;
+	align-items: center;
+
+	.num1{
+		margin-right: 10px;
+		color: $alpha;
+	}
+
+	.num2{
+		margin-left: 10px;
+		color: $alpha;
+	}
+
+	.timeline{
+		width: 100px;
+		height: 3px;
+		background: #ccc;
+		display: inline-block;
+		position: relative;
+
+		.fill{
+			background: #0012b5;
+			width: 50px;
+			height: 3px;
+			display: inline-block;
+			position: absolute;
+		}
+	}
+}
+
+.spin-right{ animation: SpinRight 3s forwards; }
+.spin-left{ animation: SpinLeft 3s forwards; }
+
+.move-bar-right{ animation: moveBarRight 3s forwards; }
+.move-bar-left{ animation: moveBarLeft 3s forwards; }
+
+.banner1,
+.banner2{
+	position: absolute;
 }
 
 
+.banner1{
+	transform: translateZ(240px);
+}
 
-
-
-
-
-
-
+.banner2{
+	transform: rotateY(90deg) translateZ(240px);
+}
 
 .header {
-    height: auto;
-    background: linear-gradient(to right, $white 0%, $white 50%, $charlie 50%, $charlie 100%);
+	height: auto;
+	background: linear-gradient(to right, $white 0%, $white 50%, $charlie 50%, $charlie 100%);
 
-    &-nav {
-        height: 90px;
-        background-color: $white;
+	&-nav {
+		height: 90px;
+		background-color: $white;
 
-        &-logo {
-            width: 165px;
-            height: 90px;
-            display: inline-block;
-            background: url(/app/images/efex-icon.svg) $bravo no-repeat center center;
-        }
-    }
+		&-logo {
+			width: 165px;
+			height: 90px;
+			display: inline-block;
+			background: url(/app/images/efex-icon.svg) $bravo no-repeat center center;
+		}
+	}
 
-    .grid {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-    }
+	.grid {
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+	}
 
-    &-title {
-        display: block;
-        margin: 18px 0;
-        font-size: 30px;
-        color: $foxtrot;
-        font-weight: normal;
-        text-decoration: none;
-        font-family: 'Poppins Light';
+	&-title {
+		display: block;
+		margin: 18px 0;
+		font-size: 30px;
+		color: $foxtrot;
+		font-weight: normal;
+		text-decoration: none;
+		font-family: 'Poppins Light';
 
-        &:hover, &:link {
-            text-decoration: none;
-        }
-    }
-    
-    &-description {
-        color: $foxtrot;
-        font-size: 40px;
-        margin-top: 40px;
-        font-weight: normal;
-        font-family: 'Poppins Bold';
-    }
+		&:hover, &:link {
+			text-decoration: none;
+		}
+	}
+	
+	&-description {
+		color: $foxtrot;
+		font-size: 40px;
+		margin-top: 40px;
+		font-weight: normal;
+		font-family: 'Poppins Bold';
+	}
 }
 
 /* MEDIA QUERY ------------------------------------------------------------ */
