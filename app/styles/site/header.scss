@@ -262,7 +262,7 @@ svg {
 }
 
 #carrossel{
-	width: 100%;
+	width: 560px;
 	line-height: 160px;
 	text-align: center;
 	color: black;
@@ -318,7 +318,6 @@ svg {
 .banner2{
 	position: absolute;
 }
-
 
 .banner1{
 	transform: translateZ(240px);
@@ -376,15 +375,37 @@ svg {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
+	#carrossel{
+		width: 400px;
+	}
 
+	.banner1{
+		transform: translateZ(200px);
+	}
+
+	.banner2{
+		transform: rotateY(90deg) translateZ(200px);
+	}
+
+	.counter{
+		bottom: 0px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-
+	.counter{
+		bottom: -140px;
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
+	#carrossel{
+		top: 70px;
+	}
 
+	.counter{
+		bottom: -30px;
+	}
 }

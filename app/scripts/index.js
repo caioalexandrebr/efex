@@ -4,6 +4,7 @@ if (process.env.NODE_ENV !== 'production') {
   require('../index.pug')
 }
 
+var $ = document.querySelector.bind(document)
 const menu = document.querySelector('#toggle')
 const menuItems = document.querySelector('#overlay')
 const menuContainer = document.querySelector('.menu-container')
@@ -19,18 +20,26 @@ function toggleMenu (e) {
 
 menu.addEventListener('click', toggleMenu, false)
 
+var callFuncLft
+var callFuncRgt
+
+var clrTimeouts = function () {
+  clearTimeout(callFuncRgt)
+  clearTimeout(callFuncLft)
+}
+
 var callSpinRight = function () {
-  document.querySelector('#carrossel').classList = 'carousel spin-right'
-  document.querySelector('.fill').classList = 'fill move-bar-right'
-  setTimeout(function () {
+  $('#carrossel').classList = 'carousel spin-right'
+  $('.fill').classList = 'fill move-bar-right'
+  callFuncLft = setTimeout(function () {
     callSpinLeft()
   }, 5000)
 }
 
 var callSpinLeft = function () {
-  document.querySelector('#carrossel').classList = 'carousel spin-left'
-  document.querySelector('.fill').classList = 'fill move-bar-left'
-  setTimeout(function () {
+  $('#carrossel').classList = 'carousel spin-left'
+  $('.fill').classList = 'fill move-bar-left'
+  callFuncRgt = setTimeout(function () {
     callSpinRight()
   }, 5000)
 }
@@ -39,10 +48,12 @@ setTimeout(function () {
   callSpinRight()
 }, 5000)
 
-document.querySelector('.num2').addEventListener('click', () => {
+$('.num2').addEventListener('click', () => {
+  clrTimeouts()
   callSpinRight()
 })
 
-document.querySelector('.num1').addEventListener('click', () => {
+$('.num1').addEventListener('click', () => {
+  clrTimeouts()
   callSpinLeft()
 })
