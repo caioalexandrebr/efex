@@ -22,6 +22,7 @@ $screen-lg-min: 1200px;
 @import 'components/services';
 
 body {
+    font-weight: normal;
     background-color: $white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins Regular';
 }

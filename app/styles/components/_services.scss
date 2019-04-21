@@ -4,21 +4,19 @@
     &-title {
         z-index: 2;
         display: block;
-        position: relative;
-        margin: 100px 0 100px 100px;
-        
         font-size: 40px;
+        position: relative;
         font-weight: normal;
         font-family: 'Poppins Bold';
+        margin: 100px 0 100px 100px;
 
         &-bg {
             top: 0;
             z-index: 1;
+            color: $hotel;
             display: block;
-            position: absolute;
-
-            color: #C9C9C9;
             font-size: 180px;
+            position: absolute;
             font-weight: normal;
             font-family: 'Poppins Bold';
         }
@@ -29,9 +27,17 @@
         font-family: 'Poppins Regular';
     }
     &-link {
-        color: $bravo;
-        font-size: 18px;
-        font-weight: normal;
-        font-family: 'Poppins Bold';
+        text-decoration: none;
+
+        &:hover, &:link {
+            text-decoration: none;
+        }
+        &-span {
+            color: $bravo;
+            font-size: 18px;
+            margin-right: 20px;
+            font-weight: normal;
+            font-family: 'Poppins Bold';
+        }
     }
 }   
