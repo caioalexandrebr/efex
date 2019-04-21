@@ -360,7 +360,7 @@ svg {
 			text-decoration: none;
 		}
 	}
-	
+
 	&-description {
 		color: $foxtrot;
 		font-size: 40px;
@@ -368,6 +368,25 @@ svg {
 		font-weight: normal;
 		font-family: 'Poppins Bold';
 	}
+
+	&-link {
+        text-decoration: none;
+
+        &:hover, &:link {
+            text-decoration: none;
+        }
+        &-span {
+            display: block;
+			margin: 18px 0;
+			font-size: 30px;
+			color: $foxtrot;
+			font-family: 'Poppins Light';
+
+			.arrow {
+				margin-left: 40px;
+			}
+        }
+    }
 }
 
 /* MEDIA QUERY ------------------------------------------------------------ */

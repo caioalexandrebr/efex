@@ -6,7 +6,6 @@
         display: block;
         font-size: 40px;
         position: relative;
-        font-weight: normal;
         font-family: 'Poppins Bold';
         margin: 100px 0 100px 100px;
 
@@ -17,14 +16,11 @@
             display: block;
             font-size: 180px;
             position: absolute;
-            font-weight: normal;
             font-family: 'Poppins Bold';
         }
     }
     &-description {
         font-size: 18px;
-        font-weight: normal;
-        font-family: 'Poppins Regular';
     }
     &-link {
         text-decoration: none;
@@ -36,7 +32,6 @@
             color: $bravo;
             font-size: 18px;
             margin-right: 20px;
-            font-weight: normal;
             font-family: 'Poppins Bold';
         }
     }

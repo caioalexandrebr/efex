@@ -16,14 +16,11 @@
         color: $white;
         font-size: 55px;
         margin-top: 80px;
-        font-weight: normal;
         font-family: 'Poppins Bold';
     }
     &-description {
         color: $white;
         font-size: 30px;
-        font-weight: normal;
-        font-family: 'Poppins Regular';
     }
     &-list {
         padding: 0;
@@ -35,8 +32,6 @@
             list-style: none;
             padding-left: 48px;
             position: relative;
-            font-weight: normal;
-            font-family: 'Poppins Regular';
 
             &:first-child {
                 margin-bottom: 20px;
@@ -76,8 +71,6 @@
             &-title {
                 color: $echo;
                 font-size: 20px;
-                font-weight: normal;
-                font-family: 'Poppins Regular';
             }
         }
 
